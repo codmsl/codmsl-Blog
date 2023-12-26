@@ -1,0 +1,132 @@
+* {
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+    font-family: "verdana"; line-height: 150%;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    position: fixed; top: 0px; left: 0px;
+    overflow: hidden; z-index: 2;
+    border-bottom: 1px solid black;
+    background-color: #ffffff;
+}
+header .inner {
+    width: 80%; height: 120px;
+    margin: 0px auto; position: relative;
+}
+header .inner h1 {
+    position: absolute; left: 10px; bottom: 0px;
+}
+header .inner h1 a {
+    font: bold 30px/1 "verdana"; color: #343B62;
+}
+nav {
+    float: right; overflow: hidden;
+    position: absolute; bottom: 0px; right: 0px;
+}
+nav > ul {
+    overflow: hidden;
+}
+nav > ul > li {
+    float: left;
+}
+nav > ul > li > a {
+    display: block;
+    font: bold 15px/1 "verdana"; color: #555;
+    padding: 20px 40px;
+}
+nav > ul > li > a:hover {
+    color: #fc0;
+}
+#main {
+    width: 100%; height: 700px;
+    margin-top: 120px;
+    background-image: url("portfolio.png");
+    background-size: cover;
+}
+section {
+    width: 100%; height: 450px;
+    padding: 30px;
+}
+section>p {
+    text-align: center;
+    font: bold 25px/1 "verdana"; color: black; 
+}
+article {
+    width: 1170px; height: 300px;
+    margin: 30px auto; display: flex;
+}
+article .area {
+    width: 300px; height: 300px;
+    margin: 0px 45px; padding: 20px;
+    display: flex; position: relative;
+    transition-duration: 1s;
+    border: 3px solid black; border-radius: 15%;
+}
+article .area .title {
+    width: 250px; margin: auto 0px;
+    display: flex; flex-direction: column;
+}
+article .area .title>h1 {
+    width: 250px;
+    margin-top: 10px; text-align: center;
+    font: bold 30px/1 "verdana"; color: black;
+}
+article .area .title>div {
+    width: 250px;
+    font: 500 15px/1 "verdana"; color: black; 
+    text-align: center; line-height: 150%;
+}
+article .area .detail {
+    width: 300px; height: 300px;
+    padding: 20px; opacity: 0;
+    display: flex; flex-wrap: wrap;
+    position: absolute; top: 0px; left: 0px;
+}
+article .area .detail>div {
+    width: 250px; margin: auto 0px;
+    display: flex; flex-direction: column;
+}
+article .area .detail>div>h1 {
+    width: 250px;
+    margin-top: 10px; text-align: center;
+    font: bold 25px/1 "georgia"; color: #343B62;
+}
+article .area .detail>div>p {
+    width: 250px;
+    font: 500 20px/1 "georgia"; color: black; 
+    text-align: center; line-height: 150%;
+}
+article .area:hover {
+    transform: scale(1.1, 1.1);
+    border: 2px solid black; box-shadow: 5px 5px 5px black;
+}
+article .area:hover .title {
+    opacity: 0;
+}
+article .area:hover .detail {
+    opacity: 1;
+}
+footer {
+    width: 100%; margin-top: 30px; padding: 30px;
+    background-color: #343B62;
+    border-top: 2px solid black;
+}
+footer .contact {
+    width: 1000px; height: 100px;
+    margin: 0px auto; position: relative;
+}
+footer p {
+    width: 1000px; margin: 0px auto; padding: 20px 10px 0px;
+    line-height: 20px; color: #ccc; font-size: 12px;
+}
+footer .contact h1 {
+    position: absolute; left: 10px; bottom: 15px;
+    color: #ccc;
+}

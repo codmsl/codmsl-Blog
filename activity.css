@@ -1,0 +1,143 @@
+* {
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+    font-family: "verdana"; line-height: 150%;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    position: fixed; top: 0px; left: 0px;
+    overflow: hidden; z-index: 2;
+    border-bottom: 1px solid black;
+    background-color: #ffffff;
+}
+header .inner {
+    width: 80%; height: 120px;
+    margin: 0px auto; position: relative;
+}
+header .inner h1 {
+    position: absolute; left: 10px; bottom: 0px;
+}
+header .inner h1 a {
+    font: bold 30px/1 "verdana"; color: #343B62;
+}
+nav {
+    float: right; overflow: hidden;
+    position: absolute; bottom: 0px; right: 0px;
+}
+nav > ul {
+    overflow: hidden;
+}
+nav > ul > li {
+    float: left;
+}
+nav > ul > li > a {
+    display: block;
+    font: bold 15px/1 "verdana"; color: #555;
+    padding: 20px 40px;
+}
+nav > ul > li > a:hover {
+    color: #fc0;
+}
+#main {
+    width: 100%; height: fit-content;
+    margin-top: 120px; 
+    padding: 10px; overflow: hidden;
+    display: flex;
+}
+aside {
+    width: 20%; height: fit-content; padding: 10px;
+}
+aside #menu {
+    width: 40%; height: fit-content;
+    float: right;
+}
+aside #menu li a {
+    display: block; text-align: end;
+    font: bold 15px/1 "verdana"; color: #444;
+    padding: 30px 20px 30px 0px;
+}
+aside #menu li a:hover {
+    color: #fc0; text-decoration: underline;
+}
+section {
+    width: 80%; height: fit-content;
+    padding: 20px; border-left: 1px solid black;
+}
+section .descr {
+    width: 100%; height: 50px;
+}
+section .descr h1 {
+    margin: 20px;
+    font: bold 30px/1 "Nanum Myeongjo"; color: black;
+}
+article {
+    width: 100%; height: fit-content; padding: 10px; 
+    display: flex; flex-wrap: wrap;
+}
+article .title {
+    width: 100%; height: 100px;
+}
+article .title h1 {
+    margin: 20px;
+    font: bold 20px/1 "Georgia"; color: black;
+}
+article .title p {
+    margin-left: 50px; margin-top: 30px;
+    font: 500 15px/1 "Georgia"; color: black;
+}
+article a {
+    width: 220px; height: 220px;
+    margin: 20px; padding: 20px;
+    display: flex; position: relative;
+    border-radius: 15%;
+    box-shadow: 3px 3px 5px 5px black;
+    text-align: center;
+}
+article a:hover {
+    box-shadow: 3px 3px 5px 5px #fc0; transform: scale(1.1, 1.1);
+}
+article a img {
+    width: 100%; height: auto;
+}
+article .explain {
+    width: 800px; height: 250px; padding: 20px;
+}
+article .explain p {
+    width: 100%; padding: 20px;
+    font: bold 15px/1 "Nanum Myeongjo", serif; color: black;
+    line-height: 200%;
+}
+section .back {
+    width: 100%; height: 100px;
+    position: relative;
+}
+section .back>a {
+    position: absolute; bottom: 0px; right: 50px;
+    font: 500 15px/1 "georgia"; color: #343B62;
+}
+section .back>a:hover {
+    color: #fc0; text-decoration: underline;
+}
+footer {
+    width: 100%; padding: 10px;
+    position: relative; top: 0px;
+    background-color: #343B62;
+}
+footer .contact {
+    width: 1000px; height: 100px;
+    margin: 0px auto; position: relative;
+}
+footer p {
+    width: 1000px; margin: 0px auto; padding: 20px 10px 0px;
+    line-height: 20px; color: #ccc; font-size: 12px;
+}
+footer .contact h1 {
+    position: absolute; left: 10px; bottom: 15px;
+    color: #ccc;
+}
